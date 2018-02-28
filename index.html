@@ -2,20 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Website</title>
-    <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
+    <title>Welcome to Briana's First Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
     <style>
         body {
-            background-image:url("https://wallpapersite.com/images/wallpapers/stars-3840x2160-4k-6347.jpg")
+            background-image:url("https://wallpapersite.com/images/wallpapers/stars-3840x2160-4k-6347.jpg");
+            overflow-y: scroll;
         }
         .greet{font-size:20px;
             font-weight:bold;
             color:white;
         }
-        #top-label{background-color: rgba(79, 167, 255, 0.33);
-            font-family:"Indie Flower", fantasy;
-            text-align:center;
+        .intro-div{
+            width: 50%;
+            background-color: rgba(79, 167, 255, 0.45);
+            color: white;
+            font-family:"Pompiere", fantasy;
+            font-size: 25px;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 25px;
+            padding: 20px;
+
         }
+        p.colors{
+            width: 50%;
+            background-color: white;
+            border: 4px solid lightskyblue;
+            border-radius: 25px;
+            padding: 20px;
+            text-align: center;
+            font-size: 23px;
+            font-family: "Pompiere", fantasy;
+            position: absolute;
+            right: 10px;
+            color:darkblue;
+
+        }
+        p.border-div{
+            width: 35%;
+            background-color: white;
+            border: 10px dotted lightskyblue;
+            border-radius: 25px;
+            padding: 20px;
+            text-align: center;
+            font-size: 23px;
+            font-family: "Pompiere", fantasy;
+            position: absolute;
+            color:darkblue;
+
+        }
+        #my-name{
+            color: rgb(190, 190, 255)
+        }
+        #top-label {
+            background-color: rgba(83, 202, 255, 0.33);
+            font-family: "Pompiere", fantasy;
+            text-align: center;
+        }
+
+        .keyword-green{
+            color: #8bcd75;
+        }
+        .keyword-orange{
+            color: #ffaa5a;
+        }
+        #word-col{
+            color:palevioletred;
+        }
+        #dec-col{
+            color:mediumpurple;
+        }
+
+        #pretty{
+            text-decoration:underline;
+        }
+
+
     </style>
 </head>
 <body>
@@ -23,6 +86,39 @@
     <h1 class="greet"> Hey there!</h1>
     <p class="greet"> Welcome to the Start of my webpage!</p>
 </div>
+
+<div class="intro-div">
+    <p> Personally, I believe that it would be best to start out by introducing myself.<br>
+        Hello! <br>
+        I'm <span id="my-name">Briana</span>. <br>
+        This is my first website I've made so far. I am in the process of learning<br>
+        HTML, CSS, and JavaScript. So far, I'm <em>really</em> liking it! I like it so much<br>
+        that I'm actually considering trying out more when it comes to web design.
+        <br>But for now, let me show you the pretty cool things I can do.<br></p>
+</div>
+
+    <p class="colors"> So I guess I'll start off with something simple.<br>
+        I can use different <span class="keyword-orange">colors</span> to <span id="dec-col">decorate</span> my website...
+        to make it look all <em id="pretty"><strong>pretty</strong></em>.<br>I changed the background-<span id="word-col">color</span>
+        to white so you can see the <span class="keyword-green">colors</span> better!
+
+<p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</p>
+    <p class="border-div">
+        
+        I can also use borders! <br>
+        I am able to make my borders round, change the size, and the color too!<br>
+        I can also make the borders thin, doubled, or even dashed if I wanted to.<br>
+        Right now, this border is dotted.
+
+    </p>
 
 
 </body>
