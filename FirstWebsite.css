@@ -11,6 +11,9 @@ body {
     text-align: center;
     font-size: 2.125em; color: white;
 }
+#list{
+    color:black;
+}
 .topnav{
     background-color: rgba(97, 153, 255, 0.44);
     color: white;
