@@ -1,0 +1,122 @@
+body {
+    background-image:url("https://wallpapersite.com/images/wallpapers/stars-3840x2160-4k-6347.jpg");
+    overflow-y: scroll;
+}
+
+
+#top-label{
+
+    background-color: rgba(83, 202, 255, 0.33);
+    font-family: "Pompiere", fantasy;
+    text-align: center;
+    font-size: 2.125em; color: white;
+}
+
+p.i-intro{
+    background-color: rgba(79, 167, 255, 0.45);
+    color: white;
+    font-family:"Pompiere", fantasy;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 20px;
+
+}
+
+p.ii-colors{
+    width: 50%;
+    background-color: white;
+    border: 4px solid lightskyblue;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    float: right;
+    font-size: 23px;
+    font-family: "Pompiere", fantasy;
+    color:darkblue;
+
+}
+
+
+p.iii-border{
+    background-color: white;
+    border: 10px dotted lightskyblue;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    float:left;
+    font-size: 23px;
+    font-family: "Pompiere", fantasy;
+    color:darkblue;
+
+}
+
+p.iv-images{
+    width: 50%;
+    text-align: center;
+    float:right;
+    background-color: white;
+    border: 4px solid lightskyblue;
+    padding: 20px;
+    font-family: "Pompiere", fantasy;
+    font-size:23px;
+}
+
+p.v-lists{
+    width:50%;
+    color: black;
+    font-family: "Pompiere", fantasy;
+    font-size: 20px;
+    padding: 20px;
+    float: left;
+    border: 4px solid lightskyblue;
+    background-color: white;
+
+
+}
+
+p.vi-wg{
+    color: midnightblue;
+    background-color:white;
+    border: 4px solid lightskyblue;
+    padding: 20px;
+    font-family: "Pompiere", fantasy;
+    font-size:20px;
+    width: 60%;
+    float: right;
+
+}
+
+img.fancy-photo {
+    border-radius: 180px;
+    filter: opacity(73%);
+}
+
+#list{
+    float: left;
+    background-color: white;
+}
+
+#my-name{
+    color: rgb(190, 190, 255)
+}
+
+
+
+.keyword-green{
+    color: #8bcd75;
+}
+.keyword-orange{
+    color: #ffaa5a;
+}
+#word-col{
+    color:palevioletred;
+}
+#dec-col{
+    color:mediumpurple;
+}
+
+#pretty{
+    text-decoration:underline;
+}
