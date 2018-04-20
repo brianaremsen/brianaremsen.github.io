@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Some Mad Libs!</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Dekko|Engagement|Gamja+Flower|Homemade+Apple" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: lightskyblue;
+            font-family: Gamja Flower, fantasy;
+            font-size: 3.5em;
+            text-align: center;
+        }
+
+        #noun{
+
+            color: teal;
+
+        }
+        #verb{
+            color:teal;
+        }
+
+        #adj{
+
+            color: teal;
+
+        }
+
+    </style>
+</head>
+<body>
+
+  <h1>Mad Libs</h1>
+
+  <form id="lib-form">
+    <label>
+      Noun: <input type="text" id="noun">
+      Verb: <input type="text" id="verb">
+      Adjective: <input type="text" id="adj">
+    </label>
+    <br/>
+    <button type="submit">Generate Your Story!</button>
+  </form>
+
+  <div id="story"></div>
+
+ Fill in the blanks!
+
+
+  <script>
+    var libForm = document.getElementById("lib-form");
+    libForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      var nounVal = document.getElementById("noun").value;
+      var verbVal = document.getElementById("verb").value;
+      var adjVal = document.getElementById("adj").value;
+
+      var storyDiv = document.getElementById("story");
+      storyDiv.innerHTML = "I went out to the " + nounVal + " in order to " + verbVal + "." + " It was very " + adjVal + " outside!";
+
+
+    });
+
+  </script>
+
+</body>
+</html>
