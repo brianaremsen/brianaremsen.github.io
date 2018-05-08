@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homepage</title>
+    <link href="FirstWebsite-HomeTab.html" rel="html" type="text/html">
+    <link href="FW-WordGuesserGame.html" rel="html" type="text/html">
+    <link href="FW-Colors.html" rel="html" type="text/html">
+    <link href="FW-Borders.html" rel="html" type="text/html">
+    <link href="FW-Images.html" rel="html" type="text/html">
+    <link href="FW-ListsNTables.html" rel="html" type="text/html">
+    <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+    <link href="madlibs.html" rel="html" type="text/html">
+    <meta charset="UTF-8">
+    <title>Google Maps API</title>
+    <style>
+        body{
+            background-color: lightpink;
+            color: #ffffff;
+        }
+        #text{
+            background-color: rgba(255, 225, 239, 0.5);
+            border: dotted;
+        }
+        #map {
+            padding-left: 1px;
+            float: right;
+            height: 350px;
+            width: 60%;
+        }
+        h1{
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+        em{
+            color: #c18ea8;
+        }
+        .topnav{font-family: "Pompiere", fantasy;}
+    </style>
+</head>
+<body>
+<div class="topnav">
+    <a class="active" href="FirstWebsite-HomeTab.html">Homepage</a>
+    <a href="FW-Colors.html">Colors in HTML</a>
+    <a href="FW-Borders.html">Borders in HTML</a>
+    <a href="FW-Images.html">Images in HTML</a>
+    <a href="FW-ListsNTables.html">Lists + Tables in HTML</a>
+    <a href="FW-WordGuesserGame.html">Word-Guesser Game</a>
+    <a href="">Tic-Tac-Toe Game (Coming Soon!)</a>
+    <a href="madlibs.html">Mad Libs</a>
+    <a href="mapsapi.html">5 of my Favorite Places (Coming Soon!)</a>
+</div>
+<h1>5 of my favorite places to have fun!</h1>
+<br>
+<div id="map"></div>
+
+<script>
+    function initMap() {
+        var mapDiv = document.getElementById('map');
+        var opts = {
+            zoom: 6,
+            center: {lat:37.834732137, lng:-122.2941596},
+            gestureHandling: 'greedy'
+        };
+        var map = new google.maps.Map(mapDiv, opts);
+
+        var marker1 = new google.maps.Marker({
+            position: {lat:37.834732137, lng: -122.2941596},
+            map: map
+        });
+        var marker2 = new google.maps.Marker({
+            position: {lat:34.1378755, lng: -118.353836},
+            map: map
+        });
+        var marker3 = new google.maps.Marker({
+            position: {lat:37.7837078, lng: -122.4080094},
+            map: map
+        });
+        var marker4 = new google.maps.Marker({
+            position: {lat:36.9642424, lng: -122.0197966},
+            map: map
+        });
+        var marker5 = new google.maps.Marker({
+            position: {lat:37.8490384, lng: -122.2731425},
+            map: map
+        });
+        var info1 = new google.maps.InfoWindow({
+            content: 'Bay Street - Emeryville'
+        });
+        marker1.addListener('click', function() {
+            info1.open(map, marker1);
+        });
+        var info2 = new google.maps.InfoWindow({
+            content: 'Universal Studios - Hollywood'
+        });
+        marker2.addListener('click', function() {
+            info2.open(map, marker2);
+        });
+        var info3 = new google.maps.InfoWindow({
+            content: 'Westfield Mall - San Francisco'
+        });
+        marker3.addListener('click', function() {
+            info3.open(map, marker3);
+        });
+        var info4 = new google.maps.InfoWindow({
+            content: 'Beach Boardwalk - Santa Cruz'
+        });
+        marker4.addListener('click', function() {
+            info4.open(map, marker4);
+        });
+        var info5 = new google.maps.InfoWindow({
+            content: 'Giin Thai - Berkeley'
+        });
+        marker5.addListener('click', function() {
+            info5.open(map, marker5);
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrSAqX0DuI-ZA3xrvnSZ_atK5GvXFelQQ&callback=initMap">
+</script>
+<div id="text">
+<ul>
+    <li>
+        <em>Bay Street in Emeryville</em> for a quick day of shopping since I live so close to this mall!
+    </li>
+    <br>
+    <li>
+        <em>Westfield Mall in San Francisco</em> for huge shopping sprees since there are so many stores/boutiques here!
+    </li>
+    <br>
+    <li>
+        <em>Giin Thai Canteen in Berkeley</em> for when I'm craving thai food. I love their Pad See Ew and sweet potato fries.
+    </li>
+    <br>
+    <li>
+        <em>The beach boardwalk in Santa Cruz</em> will be a place I go to often, since I'll be in UCSC. It's not just <br>
+        a beautiful boardwalk, but it's also a <Strong>super</Strong> fun amusement park!
+    </li>
+    <br>
+    <li>
+        <em>Universal Studios in Hollywood</em> is an incredible amusement park/tourist attraction. I've only been <br>
+        there around two or three times, but I'm hoping to go again this coming summer to check out The Walking Dead<br>
+        zombie-haunted-house!
+    </li>
+    <br>
+</ul>
+    </div>
+
+</body>
+</html>
